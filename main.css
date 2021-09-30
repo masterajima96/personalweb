@@ -1,0 +1,200 @@
+/*Styleshhet for responsive wepage and browser by using css and media query
+Author:Ajima Master
+Date:8/25/21*/
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('');
+@import url('');
+
+/*responsive desktop size swap two page 12 column*/
+*{
+    box-sizing:border-box;
+}
+html {
+    line-height: 1.15;
+/*1 for responsive web browser*/
+-ms-text-size-adjust: 100%;
+/*2*/
+-webkit-text-size-adjust: 100%;
+/*2*/
+}
+/*sections*/
+/*remove margine in all browser*/
+body {
+    background-color: #fff;
+    margin: 0;
+
+}
+/*correct article display in IE9
+*/
+article,
+aside,
+footer,
+header,
+section{
+    display:block;
+}
+/*Correct the font size and margine on h1 elements
+ within section and article context in chrome firefox and safari*/
+ h1{
+     font-size: 2em;
+     margin:0.67em 0;
+
+ }
+ /*Grouping the content*/
+ figcaption,
+ figure,
+ main{
+     /*1*/
+     display: block;
+
+ }
+ /*add the correct margin*/
+ figure {
+     margin:0;
+
+ }
+ 
+     /*Add the correct box sizing in firefox
+     show the overflow in edge and IE.*/
+     hr{
+         -webkit-box-sizing:content-box;
+         box-sizing:content-box;
+         /*1*/
+         height: 0;
+         overflow:visible;
+         /*2*/
+         /*Text level sementic */
+         /*Remove gray background on active link in IE 10
+         Remove gap in the link underlin in IOS 8+ and safari 8+
+         */
+         
+     }
+     #about{
+         margin-top:8em;
+     }
+     a {
+            background-color: transparent;
+            /*1*/
+            /*for responsive web page*/
+            -webkit-text-decoration-skip:objects;
+            /*2*/
+     }
+     /*z index use for positon element in stack formatt*/
+            .right-sidebar{
+                position: fixed;
+                top: 30%;
+                right:0;
+                /*z index*/
+            }
+            /*media query for sidebar*/
+            @media(min-width:40em){
+                .right-sidebar{
+                    opacity: 1;
+                }
+            }
+            /*for sidebar list style*/
+            .right-sidebar li{
+                text-decoration: none;
+                list-style: none;
+                padding: 8px;
+                font-size: 25px;
+                text-align: center;
+                /*cursor pointer*/
+                transition:0.5s;
+                /*cursor pointer*/
+                border-bottom:1px solid ;
+            }
+            a{
+                color:white;
+            }
+            .right-sidebar li:nth-child(1){
+                background-color: #333;
+                border-radius: 6px 0 0 0;
+            }
+            .right-sidebar li:nth-child(2){
+                background-color: #0077B5;
+            }
+            .right-sidebar li:nth-child(3){
+                background: #a20909;
+            }
+            .right-sidebar li:nth-child(4){
+                background: #146341;
+            }
+            .right-sidebar a{
+                color:#fff;
+            }
+            .right-sidebar li:before{
+                position:absolute;
+                display:block;
+                background: #1c2b2d;
+                color:#fff;
+                padding:0.2em 1em; 
+                border-radius:6px;
+                font-size:0.5em;
+                right:40%;
+                white-space: nowrap;
+                border-bottom:1px solid white;
+                opacity:0;
+                transition: right linear 0.2s,
+                            opacity linear 0.1s;
+                            border-bottom: 0px;
+            }
+            .right-sidebar li:hover:before{
+                opacity:1;
+                right:70%
+            }
+            /*1.Remove bottom border in chrome 57 and firefox 39
+           2. Add the correct text decoration in chrome edge IO OPERA SAFARI*/
+abbr[title]{
+    border-bottom:none;
+    /*1*/
+    text-decoration: underline;
+    /*2*/
+    -webkit-text-decoration:underline dotted;
+    text-decoration:underline dotted;
+    /*2*/
+}
+/*Prevent duplicate application of bolder by next rule in safari 6*/
+b,
+strong{
+    font-weight: inherit;
+}
+/*Add the correct font weight in chrome,Edge in safari*/
+small{
+    font-size: 80%;
+}
+/*Add Embded content*/
+/*Add the correct display in IE 9*/
+audio,
+video{
+    display:inline-block;
+}
+
+/*Add the correct display in ios 4-7*/
+audio:not([controls]){
+    display: none;
+    height: 0;
+
+}
+img{
+    border-style:none;
+}
+/*Forms*/
+/*Change the font style in all browser*/
+/*Remove margine*/
+button,
+input,
+optgroup,
+select,
+textarea{
+    font-family:sans-serif;
+    /*1*/
+    font-size:100%;
+    line-height:1.15;
+    /*1*/
+}
+
+
+     
+
